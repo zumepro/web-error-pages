@@ -1,0 +1,60 @@
+body {
+    font-family: monospace;
+}
+
+
+.container {
+    position: absolute;
+    display: flex;
+    width: 99vw;
+    height: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    max-width: 95vw;
+    max-height: 95vh;
+    overflow: hidden;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container img {
+    height: 4em;
+    margin-right: 5em;
+}
+
+
+.terminal {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.command {
+    opacity: 0;
+    margin: 0;
+    font-size: 3em;
+}
+
+.command-wrapper {
+    display: flex;
+}
+
+
+.output-wrapper {
+    margin-top: 1em;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.output {
+    transition: .1s ease;
+    opacity: 0;
+    padding-right: .5em;
+}
